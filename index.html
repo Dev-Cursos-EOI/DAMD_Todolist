@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+
+<body class="bg-gradient-to-r from-yellow-200 via-yellow-300 to-yellow-400 px-10 pt-10">
+
+    <div class="w-full bg-white rounded-lg p-6">
+        <h1 class="font-bold text-xl">Cosas que aprender</h1>
+
+        <div class="flex space-x-3 mt-3">
+            <input
+                id="inData"
+                type="text"
+                placeholder="Introduce lo que tienes que aprender"
+                class="w-full rounded-md border-slate-300"
+            >
+
+            <button
+                onclick="addTask()"
+                class="bg-yellow-400 hover:bg-yellow-600 rounded-md p-3"
+            >Guardar</button>
+        </div>
+
+        <div id="tasks">
+
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
